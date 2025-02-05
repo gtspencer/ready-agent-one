@@ -1,6 +1,6 @@
 {
   "name": "@0xspencer/ready-agent-one",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "A framework giving AI agents a toolkit to interact meaningfully in a game world.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -317,5 +317,11 @@
   "bugs": {
     "url": "https://github.com/gtspencer/ready-agent-one/issues"
   },
-  "homepage": "https://github.com/gtspencer/ready-agent-one#readme"
+  "homepage": "https://github.com/gtspencer/ready-agent-one#readme",
+  "exports": {
+    ".": {
+      "types": "./dist/src/index.d.ts",
+      "default": "./dist/src/index.js"
+    }
+  }
 }
