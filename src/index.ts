@@ -1,6 +1,6 @@
 import { WorldTick, WorldEvent, WorldMessage, EventName } from "./types/shared-types";
 
-type EventCallback = (eventData: object) => void;
+export type EventCallback = (eventData: object) => void;
 const actionMappings: Record<EventName, EventCallback[]> = {
     PLAYER_ENTER: [],
     PLAYER_EXIT: [],
